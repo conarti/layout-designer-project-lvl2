@@ -1,0 +1,14 @@
+@mixin media($type: mobile, $custom: null) {
+  $max-width: if($type == custom, $custom, map-get($breakpoints, $type));
+
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin fs($type, $size) {
+  .fs-#{$type} {
+    font-size: $size !important;
+    line-height: $font-sizes-line-height !important;
+  }
+}

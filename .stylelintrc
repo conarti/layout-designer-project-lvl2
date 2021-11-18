@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "scss/no-global-function-names": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "no-empty-source": null,
+    "order/properties-order": [],
+    "at-rule-empty-line-before": ["always",
+      {
+        "ignoreAtRules": ["import"],
+        "except": ["first-nested"]
+      }],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true,
+      "empty-line-between-groups": true
+    }]
+  }
+}

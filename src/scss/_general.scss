@@ -1,0 +1,34 @@
+body {
+  color: $dark-gray;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+
+  background-color: $black;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+
+  @include media(mobile) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+
+  @include media(mobile) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}

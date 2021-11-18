@@ -1,0 +1,91 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+}
+/** UTILITIES **/
+.fs-small {
+  font-size: 12.8px !important;
+  line-height: 150% !important;
+}
+
+.fs-1 {
+  font-size: 16px !important;
+  line-height: 150% !important;
+}
+
+.fs-2 {
+  font-size: 24px !important;
+  line-height: 150% !important;
+}
+
+.fs-3 {
+  font-size: 32px !important;
+  line-height: 150% !important;
+}
+
+.fs-4 {
+  font-size: 40px !important;
+  line-height: 150% !important;
+}
+
+.fs-5 {
+  font-size: 48px !important;
+  line-height: 150% !important;
+}
+
+.fs-6 {
+  font-size: 56px !important;
+  line-height: 150% !important;
+}
+
+.fs-7 {
+  font-size: 64px !important;
+  line-height: 150% !important;
+}
+
+body {
+  color: #cacaca;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  background-color: #08020d;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+}
+@media screen and (max-width: 1239.97px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+}
+@media screen and (max-width: 1239.97px) {
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=app.css.map */
