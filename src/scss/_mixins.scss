@@ -6,9 +6,21 @@
   }
 }
 
-@mixin fs($type, $size) {
-  .fs-#{$type} {
-    font-size: $size !important;
-    line-height: $font-sizes-line-height !important;
+@mixin flex($gap: null, $direction: null, $items: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $items;
+  flex-wrap: wrap;
+
+  @if ($direction == null or $direction == row) {
+    column-gap: $gap;
+  } @else {
+    row-gap: $gap;
   }
+}
+
+@mixin bg-image($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
 }

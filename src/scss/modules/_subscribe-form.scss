@@ -1,0 +1,55 @@
+.subscribe-form {
+  display: grid;
+  grid-template-areas: 'name email' 'btn btn';
+  gap: map-get($spacers, 2);
+  max-width: 570px;
+  margin: 0 auto;
+
+  @include media(custom, 610px) {
+    grid-template-areas: 'name name' 'email email' 'btn btn';
+  }
+
+  &-field {
+    color: $main-text-color;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
+    min-width: 270px;
+    min-height: 50px;
+    padding: 0 20px;
+
+    font-size: map-get($font-sizes, small);
+    font-weight: 700;
+
+    background: transparent;
+
+    transition: $form-transition;
+
+    &:hover {
+      border: 2px solid $secondary-text-color;
+
+      background-color: rgba($main-text-color, 10%);
+    }
+
+    &:focus {
+      border: 2px solid $primary;
+
+      background-color: rgba($main-text-color, 15%);
+    }
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &-field--name {
+    grid-area: name;
+  }
+
+  &-field--email {
+    grid-area: email;
+  }
+
+  &-btn {
+    grid-area: btn;
+  }
+}

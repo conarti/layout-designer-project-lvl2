@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+
+  font-size: map-get($font-sizes, small);
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: $btn-transition;
+
+  &-pill {
+    border-radius: $btn-pill-radius;
+  }
+
+  &-primary {
+    color: $main-text-color;
+
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}

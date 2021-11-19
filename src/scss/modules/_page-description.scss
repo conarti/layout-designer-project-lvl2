@@ -1,0 +1,11 @@
+.page-description {
+  padding: 200px 0;
+
+  text-align: center;
+
+  @include bg-image('../images/banner.png');
+
+  @include media(mobile) {
+    padding: 250px 0;
+  }
+}

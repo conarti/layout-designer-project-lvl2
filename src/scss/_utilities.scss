@@ -1,3 +1,0 @@
-@each $type, $size in $font-sizes {
-  @include fs($type, $size);
-}

@@ -6,6 +6,57 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation tt-uppercase">
+        <h3 class="navigation-logo">
+          <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
+          Music Box
+        </h3>
 
+        <ul class="navigation-menu">
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link navigation-menu-link--active" href="#">Главная</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Каталог</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Исполнители</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <input class="navigation-search" type="text" placeholder="Поиск...">
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-description" id="page-description">
+    <div class="container">
+      <h1>Онлайн музыка где угодно</h1>
+      <h2 class="mb-2 mb-mobile-1">без ограничений</h2>
+      <p class="fs-1 text-white mb-1">
+        Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+      </p>
+      <form class="subscribe-form">
+        <input
+          class="subscribe-form-field subscribe-form-field--name"
+          type="text"
+          name="name"
+          placeholder="Имя"
+        >
+        <input
+          class="subscribe-form-field subscribe-form-field--email"
+          type="text"
+          name="email"
+          placeholder="Email"
+        >
+        <button class="subscribe-form-btn btn btn-primary">Получить доступ</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>

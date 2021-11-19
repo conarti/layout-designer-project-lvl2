@@ -1,0 +1,40 @@
+@function getUtilityProperties($property, $type) {
+  @if type-of($property) == list {
+    @if $type == name {
+      @return nth($property, 1)
+    } @else if $type == value {
+      @return nth($property, 2)
+    }
+  } @else {
+    @return $property
+  }
+}
+
+@mixin generate-utility($name, $property, $values, $responsive) {
+  @each $value in $values {
+    .#{$name}-#{getUtilityProperties($value, name)} {
+      #{$property}: getUtilityProperties($value, value) !important;
+    }
+  }
+
+  @if $responsive {
+    @each $value in $values {
+      @each $breakpoint, $size in $breakpoints {
+        .#{$name}-#{$breakpoint}-#{getUtilityProperties($value, name)} {
+          @include media($breakpoint) {
+            #{$property}: getUtilityProperties($value, value) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $utility-name, $settings in $utilities {
+  @include generate-utility(
+      $utility-name,
+      map-get($settings, property),
+      map-get($settings, values),
+      map-get($settings, responsive)
+  )
+}

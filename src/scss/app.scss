@@ -1,9 +1,15 @@
 @import "variables";
 @import "mixins";
-@import "utilities";
 
+@import "utilities/api";
+@import "reset";
 @import "general";
 @import "grid";
 
-@import "modules/header";
-@import "modules/footer";
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "modules/navigation";
+@import "modules/page-description";
+@import "modules/subscribe-form";
+@import "modules/buttons";

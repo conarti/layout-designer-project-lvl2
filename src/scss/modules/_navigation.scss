@@ -1,0 +1,83 @@
+.navigation {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: $line-height;
+
+  @include flex(90px, row, center);
+
+  @include media(custom, 840px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &-logo {
+    font-weight: 400;
+
+    @include flex(map-get($spacers, 1), row, center);
+
+    @include media(custom, 840px) {
+      margin-bottom: map-get($spacers, 1);
+    }
+
+    &-icon {
+      width: map-get($spacers, 2);
+      height: map-get($spacers, 2);
+    }
+  }
+
+  &-menu {
+    @include flex(map-get($spacers, 2), null, center);
+
+    @include media(custom, 840px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: map-get($spacers, 1);
+    }
+
+    &-link {
+      color: $link-color;
+      font-size: 11px;
+
+      transition: color 0.25s;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+
+      &--active {
+        color: $link-active-color;
+      }
+    }
+  }
+
+  &-search {
+    margin-left: auto;
+    padding: 3px 8px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    color: $search-placeholder-color;
+    font-size: 13.3px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    background-color: $dark;
+
+    transition: $form-transition;
+
+    @include media(custom, 840px) {
+      margin: 0;
+      width: 100%;
+    }
+
+    &:hover {
+      border-color: $search-border-hover-color;
+    }
+
+    &:focus {
+      border-color: $search-border-focus-color;
+
+      color: $secondary-text-color;
+    }
+  }
+}
