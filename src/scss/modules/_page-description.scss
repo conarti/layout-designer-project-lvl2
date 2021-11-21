@@ -3,7 +3,7 @@
 
   text-align: center;
 
-  @include bg-image('../images/banner.png');
+  @include bg-image("../images/banner.png");
 
   @include media(mobile) {
     padding: 250px 0;

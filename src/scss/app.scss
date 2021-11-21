@@ -8,8 +8,10 @@
 
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/section";
 
 @import "modules/navigation";
-@import "modules/page-description";
 @import "modules/subscribe-form";
 @import "modules/buttons";
+@import "modules/page-description";
+@import "modules/page-pricing";

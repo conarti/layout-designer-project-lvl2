@@ -1,39 +1,39 @@
 .subscribe-form {
   display: grid;
-  grid-template-areas: 'name email' 'btn btn';
+  grid-template-areas: "name email" "btn btn";
   gap: map-get($spacers, 2);
   max-width: 570px;
   margin: 0 auto;
 
   @include media(custom, 610px) {
-    grid-template-areas: 'name name' 'email email' 'btn btn';
+    grid-template-areas: "name name" "email email" "btn btn";
   }
 
   &-field {
-    color: $main-text-color;
+    min-width: 270px;
     border: 2px solid $dark-gray;
     border-radius: 3px;
-    min-width: 270px;
     min-height: 50px;
     padding: 0 20px;
 
-    font-size: map-get($font-sizes, small);
+    color: $input-color;
     font-weight: 700;
+    font-size: map-get($font-sizes, small);
 
     background: transparent;
 
     transition: $form-transition;
 
     &:hover {
-      border: 2px solid $secondary-text-color;
+      border: $input-border-hover;
 
-      background-color: rgba($main-text-color, 10%);
+      background-color: $input-background-hover;
     }
 
     &:focus {
-      border: 2px solid $primary;
+      border: $input-border-focus;
 
-      background-color: rgba($main-text-color, 15%);
+      background-color: $input-background-focus;
     }
 
     &::placeholder {

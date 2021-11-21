@@ -216,8 +216,12 @@
   }
 }
 
-.text-white {
+.color-white {
   color: #ffffff !important;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 * {
@@ -315,6 +319,13 @@ a {
   left: 0;
 }
 
+.section {
+  padding: 100px 0;
+}
+.section-title {
+  margin-bottom: 45px;
+  text-align: center;
+}
 .navigation {
   font-weight: 400;
   font-size: 11px;
@@ -386,8 +397,8 @@ a {
 }
 @media screen and (max-width: 840px) {
   .navigation-search {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 }
 .navigation-search:hover {
@@ -396,19 +407,6 @@ a {
 .navigation-search:focus {
   border-color: #34c176;
   color: #cacaca;
-}
-
-.page-description {
-  padding: 200px 0;
-  text-align: center;
-  background-image: url("../images/banner.png");
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (max-width: 1239.97px) {
-  .page-description {
-    padding: 250px 0;
-  }
 }
 
 .subscribe-form {
@@ -424,14 +422,14 @@ a {
   }
 }
 .subscribe-form-field {
-  color: #ffffff;
+  min-width: 270px;
   border: 2px solid #cacaca;
   border-radius: 3px;
-  min-width: 270px;
   min-height: 50px;
   padding: 0 20px;
-  font-size: 13px;
+  color: #ffffff;
   font-weight: 700;
+  font-size: 13px;
   background: transparent;
   transition: color 0.25s, border 0.25s, background-color 0.25s;
 }
@@ -458,16 +456,27 @@ a {
 
 .btn {
   display: inline-block;
+  padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  padding: 20px 30px;
   font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
   transition: color 0.25s, background-color 0.25s;
 }
 .btn-pill {
   border-radius: 50rem;
+}
+.btn-fill {
+  display: block;
+}
+.btn-white-outline {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.btn-white-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .btn-primary {
   color: #ffffff;
@@ -475,6 +484,75 @@ a {
 }
 .btn-primary:hover {
   background-color: #2fad6a;
+}
+
+.page-description {
+  padding: 200px 0;
+  text-align: center;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 1239.97px) {
+  .page-description {
+    padding: 250px 0;
+  }
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  column-gap: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1239.97px) {
+  .pricing-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+}
+
+.pricing-item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+.pricing-item-title {
+  margin-bottom: 200px;
+  margin-top: 24px;
+  font-weight: 700;
+}
+.pricing-item-value {
+  font-size: 64px;
+}
+.pricing-item-currency {
+  font-size: 32px;
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+.pricing-item-footer {
+  margin-bottom: 64px;
+  font-size: 13px;
+}
+.pricing-item--free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing-item--standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing-item--premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=app.css.map */

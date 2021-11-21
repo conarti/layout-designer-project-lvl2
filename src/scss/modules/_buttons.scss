@@ -1,18 +1,33 @@
 .btn {
   display: inline-block;
+  padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  padding: 20px 30px;
 
   font-size: map-get($font-sizes, small);
   text-transform: uppercase;
 
   cursor: pointer;
+  background-color: transparent;
 
   transition: $btn-transition;
 
   &-pill {
     border-radius: $btn-pill-radius;
+  }
+
+  &-fill {
+    display: block;
+  }
+
+  &-white-outline {
+    border: 1px solid $white;
+
+    color: $white;
+
+    &:hover {
+      background-color: rgba($white, $bg-opacity-hover);
+    }
   }
 
   &-primary {

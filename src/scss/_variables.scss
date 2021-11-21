@@ -26,6 +26,9 @@ $secondary-text-color: $dark-gray;
 $body-color: $secondary-text-color;
 $body-bg: $black;
 
+$bg-opacity-hover: 10%;
+$bg-opacity-focus: 15%;
+
 /** GRID **/
 
 $breakpoints: (
@@ -36,6 +39,12 @@ $container-width: 1200px;
 /** COMPONENTS **/
 
 $btn-pill-radius: 50rem;
+
+$input-background-hover: rgba($main-text-color, $bg-opacity-hover);
+$input-background-focus: rgba($main-text-color, $bg-opacity-focus);
+$input-border-hover: 2px solid $secondary-text-color;
+$input-border-focus: 2px solid $primary;
+$input-color: $main-text-color;
 
 $line-height: 1.5;
 
@@ -93,10 +102,14 @@ $utilities: (
     values: $spacers,
     responsive: true
   ),
-  "text": (
+  "color": (
     property: color,
     values: (
       white: $white
     )
+  ),
+  "text": (
+    property: text-align,
+    values: center
   )
 );

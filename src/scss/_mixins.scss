@@ -6,11 +6,12 @@
   }
 }
 
-@mixin flex($gap: null, $direction: null, $items: null) {
+@mixin flex($gap: null, $direction: null, $items: null, $content: null, $wrap: wrap) {
   display: flex;
   flex-direction: $direction;
+  justify-content: $content;
   align-items: $items;
-  flex-wrap: wrap;
+  flex-wrap: $wrap;
 
   @if ($direction == null or $direction == row) {
     column-gap: $gap;
