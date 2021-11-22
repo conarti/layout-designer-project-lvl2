@@ -1,11 +1,38 @@
 .section{
   padding: 100px 0 0;
 
+  &--same-vertical {
+    padding: 100px 0;
+  }
+
   &-title {
     margin-bottom: 45px;
 
     text-align: center;
   }
 
-  &-content {}
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    &--row {
+      flex-direction: row;
+
+      @include media(mobile) {
+        flex-direction: column;
+      }
+    }
+
+    &--mobile-reverse {
+      @include media(mobile) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &--two-rows {
+      & > * {
+        flex-basis: 50%;
+      }
+    }
+  }
 }

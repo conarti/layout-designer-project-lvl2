@@ -31,10 +31,6 @@
     line-height: 45px;
   }
 
-  &-text {
-    font-size: 16px;
-  }
-
   &-author {
     @include flex(16px, row, center);
     margin-bottom: map-get($spacers, 5);
