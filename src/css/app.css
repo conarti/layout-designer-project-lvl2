@@ -471,7 +471,7 @@ a {
   padding: 16px 30px;
 }
 .btn-pill {
-  border-radius: 50rem;
+  border-radius: 32px;
 }
 .btn-fill {
   display: block;
@@ -496,6 +496,13 @@ a {
 }
 .btn-primary:hover {
   background-color: #2fad6a;
+}
+.btn-orange {
+  color: #ffffff;
+  background-color: #f89202;
+}
+.btn-orange:hover {
+  background-color: #df8302;
 }
 
 .page-description {
