@@ -1,0 +1,16 @@
+.footer-col {
+  @include flex(null, column);
+  min-width: 270px;
+  margin-bottom: 75px;
+
+  &-title {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    margin-bottom: map-get($spacers, 1);
+  }
+
+  @include media(mobile) {
+    margin-bottom: 30px;
+  }
+}

@@ -55,6 +55,8 @@ $buttons-outline: (
   dark-gray: $dark-gray
 );
 
+$footer-link-color: $gray;
+
 $input-background-hover: rgba($main-text-color, $bg-opacity-hover);
 $input-background-focus: rgba($main-text-color, $bg-opacity-focus);
 $input-border-hover: 2px solid $secondary-text-color;

@@ -1,0 +1,6 @@
+.divider {
+  height: 2px;
+  margin: 0 0 map-get($spacers, 4);
+
+  background-color: $body-color;
+}

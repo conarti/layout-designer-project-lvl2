@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  &-content {
+    @include flex(map-get($spacers, 4));
+
+    @include media(mobile) {
+      flex-direction: column;
+    }
+  }
+}

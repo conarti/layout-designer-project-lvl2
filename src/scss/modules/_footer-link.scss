@@ -1,0 +1,6 @@
+.footer-link {
+  color: $footer-link-color;
+  font-size: map-get($spacers, 1);
+  line-height: 24px;
+  font-weight: normal;
+}
