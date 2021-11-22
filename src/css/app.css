@@ -4,7 +4,15 @@
   font-style: normal;
   font-variant: normal;
   font-stretch: normal;
-  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 /** THEME VARS **/
 /** GRID **/
@@ -262,10 +270,13 @@ input {
   outline: none;
 }
 
+* {
+  font-family: Roboto, sans-serif;
+}
+
 body {
   color: #cacaca;
   font-size: 18px;
-  font-family: Roboto, sans-serif;
   line-height: 1.5;
   background-color: #08020d;
 }
@@ -438,17 +449,27 @@ a {
     align-items: flex-start;
   }
 }
-.navigation-logo-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
-}
 .navigation-logo {
   margin-right: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+}
+.navigation-logo-title {
+  color: #ffffff;
+  font-weight: 400;
+}
+@media screen and (max-width: 1239.97px) {
+  .navigation-logo-title {
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+.navigation-logo-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
 }
 @media screen and (max-width: 1239.97px) {
   .navigation-logo {
@@ -462,7 +483,7 @@ a {
 }
 .navigation-menu {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
 }
@@ -472,6 +493,9 @@ a {
     align-items: flex-start;
     margin-bottom: 16px;
   }
+}
+.navigation-menu-item {
+  line-height: 16px;
 }
 .navigation-menu-link {
   color: #cacaca;
@@ -484,11 +508,17 @@ a {
 .navigation-menu-link--active {
   color: #ffffff;
 }
+@media screen and (max-width: 1239.97px) {
+  .navigation-menu-link {
+    font-weight: bold;
+  }
+}
 .navigation-search {
   margin-left: auto;
   padding: 5px 10px;
   border-radius: 50px;
   min-width: 248px;
+  height: 25px;
   color: #757575;
   font-size: 13.3px;
   line-height: 15px;
