@@ -1,0 +1,21 @@
+.similar {
+  text-align: center;
+
+  &-cover {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+
+    @include media(mobile) {
+      width: 137px;
+      height: 137px;
+    }
+  }
+
+  &-name {
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+  }
+}

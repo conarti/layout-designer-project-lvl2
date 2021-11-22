@@ -847,4 +847,25 @@ a {
   text-transform: capitalize;
 }
 
+.similar {
+  text-align: center;
+}
+.similar-cover {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1239.97px) {
+  .similar-cover {
+    width: 137px;
+    height: 137px;
+  }
+}
+.similar-name {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=app.css.map */
