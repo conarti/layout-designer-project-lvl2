@@ -318,6 +318,30 @@ a {
   }
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -407,7 +431,6 @@ a {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 90px;
 }
 @media screen and (max-width: 840px) {
   .navigation {
@@ -415,22 +438,27 @@ a {
     align-items: flex-start;
   }
 }
+.navigation-logo-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
 .navigation-logo {
-  font-weight: 400;
+  margin-right: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 16px;
+}
+@media screen and (max-width: 1239.97px) {
+  .navigation-logo {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 840px) {
   .navigation-logo {
     margin-bottom: 16px;
   }
-}
-.navigation-logo-icon {
-  width: 24px;
-  height: 24px;
 }
 .navigation-menu {
   display: flex;
@@ -458,15 +486,15 @@ a {
 }
 .navigation-search {
   margin-left: auto;
-  padding: 3px 8px;
-  border: 2px solid transparent;
+  padding: 5px 10px;
   border-radius: 50px;
+  min-width: 248px;
   color: #757575;
   font-size: 13.3px;
   line-height: 15px;
   text-transform: uppercase;
   background-color: #3c3b3d;
-  transition: color 0.25s, border 0.25s, background-color 0.25s;
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
 }
 @media screen and (max-width: 840px) {
   .navigation-search {
@@ -475,10 +503,10 @@ a {
   }
 }
 .navigation-search:hover {
-  border-color: #757575;
+  box-shadow: 0 0 0 2px #757575;
 }
 .navigation-search:focus {
-  border-color: #34c176;
+  box-shadow: 0 0 0 2px #34c176;
   color: #cacaca;
 }
 
@@ -504,7 +532,7 @@ a {
   font-weight: 700;
   font-size: 13px;
   background: transparent;
-  transition: color 0.25s, border 0.25s, background-color 0.25s;
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
 }
 .subscribe-form-field:hover {
   border: 2px solid #cacaca;
@@ -617,7 +645,7 @@ a {
 }
 @media screen and (max-width: 1239.97px) {
   .page-description {
-    padding: 250px 0;
+    padding: 250px 0 200px;
   }
 }
 

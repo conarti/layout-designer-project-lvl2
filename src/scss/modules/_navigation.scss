@@ -3,25 +3,30 @@
   font-size: 11px;
   line-height: $line-height;
 
-  @include flex(90px, row, center);
+  @include flex(null, row, center);
 
   @include media(custom, 840px) {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  &-logo {
-    font-weight: 400;
+  &-logo-icon {
+    width: map-get($spacers, 2);
+    height: map-get($spacers, 2);
+    margin-right: map-get($spacers, 1);
+  }
 
-    @include flex(map-get($spacers, 1), row, center);
+  &-logo {
+    margin-right: 90px;
+
+    @include flex(null, row, center);
+
+    @include media(mobile) {
+      margin-right: 0;
+    }
 
     @include media(custom, 840px) {
       margin-bottom: map-get($spacers, 1);
-    }
-
-    &-icon {
-      width: map-get($spacers, 2);
-      height: map-get($spacers, 2);
     }
   }
 
@@ -52,9 +57,9 @@
 
   &-search {
     margin-left: auto;
-    padding: 3px 8px;
-    border: 2px solid transparent;
+    padding: 5px 10px;
     border-radius: 50px;
+    min-width: 248px;
 
     color: $search-placeholder-color;
     font-size: 13.3px;
@@ -71,11 +76,11 @@
     }
 
     &:hover {
-      border-color: $search-border-hover-color;
+      box-shadow: 0 0 0 2px $search-border-hover-color;
     }
 
     &:focus {
-      border-color: $search-border-focus-color;
+      box-shadow: 0 0 0 2px $search-border-focus-color;
 
       color: $secondary-text-color;
     }

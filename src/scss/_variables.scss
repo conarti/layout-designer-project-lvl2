@@ -78,7 +78,7 @@ $search-border-hover-color: $search-placeholder-color;
 $search-border-focus-color: $primary;
 
 $btn-transition: color 0.25s, background-color 0.25s;
-$form-transition: color 0.25s, border 0.25s, background-color 0.25s;
+$form-transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
 
 /** SIZES **/
 /** These values are used to generate utilities. Also you need to use it for our own css components **/
