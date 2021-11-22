@@ -1,0 +1,42 @@
+.pricing-item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+
+  color: $main-text-color;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 200px;
+    margin-top: map-get($spacers, 2);
+
+    font-weight: 700;
+  }
+
+  &-value {
+    font-size: map-get($font-sizes, 7);
+  }
+
+  &-currency {
+    font-size: map-get($font-sizes, 3);
+    text-transform: uppercase;
+    vertical-align: text-top;
+  }
+
+  &-footer {
+    margin-bottom: map-get($spacers, 7);
+
+    font-size: 13px;
+  }
+
+  &--free {
+    @include bg-image("../images/subscribe_1.png")
+  }
+
+  &--standart {
+    @include bg-image("../images/subscribe_2.png")
+  }
+
+  &--premium {
+    @include bg-image("../images/subscribe_3.png")
+  }
+}

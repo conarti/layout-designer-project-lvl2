@@ -77,39 +77,3 @@ $font-sizes: map-merge(
   (small: 13px),
   $spacers
 );
-
-/** UTILITIES (auto generating with utilities/api) **/
-
-$utilities: (
-  "tt": (
-    property: text-transform,
-    values: uppercase capitalize
-  ),
-  "fs": (
-    property: font-size,
-    values: $font-sizes
-  ),
-  "fw": (
-    property: font-weight,
-    values: normal bold bolder 400 500 600 700 800
-  ),
-  "m": (
-    property: margin,
-    values: $spacers
-  ),
-  "mb": (
-    property: margin-bottom,
-    values: $spacers,
-    responsive: true
-  ),
-  "color": (
-    property: color,
-    values: (
-      white: $white
-    )
-  ),
-  "text": (
-    property: text-align,
-    values: center
-  )
-);

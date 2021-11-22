@@ -1,0 +1,9 @@
+.pricing-list {
+  @include flex(50px, row, null, center, no-wrap);
+
+  margin-bottom: 50px;
+
+  @include media(mobile) {
+    @include flex(50px, column)
+  }
+}
