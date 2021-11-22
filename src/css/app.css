@@ -322,6 +322,27 @@ a {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
+.grid {
+  display: grid;
+  gap: 25px 50px;
+}
+.grid--items-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 1239.97px) {
+  .grid--items-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.grid--items-4 {
+  grid-template-columns: repeat(4, min-content);
+}
+@media screen and (max-width: 1239.97px) {
+  .grid--items-4 {
+    grid-template-columns: repeat(2, min-content);
+  }
+}
+
 .header {
   position: absolute;
   top: 25px;
@@ -783,11 +804,6 @@ a {
   }
 }
 
-.popular-tracks {
-  display: grid;
-  gap: 50px 25px;
-  grid-template-columns: 1fr 1fr;
-}
 .popular-tracks-cover {
   width: 55px;
   height: 55px;
@@ -813,10 +829,22 @@ a {
 .popular-tracks-time {
   grid-area: time;
 }
+
+.discography-item-cover {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+}
 @media screen and (max-width: 1239.97px) {
-  .popular-tracks {
-    grid-template-columns: 1fr;
+  .discography-item-cover {
+    width: 137px;
+    height: 137px;
   }
+}
+.discography-item-album-name {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=app.css.map */

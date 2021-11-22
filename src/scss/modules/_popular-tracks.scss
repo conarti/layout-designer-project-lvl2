@@ -1,8 +1,4 @@
 .popular-tracks {
-  display: grid;
-  gap: 50px 25px;
-  grid-template-columns: 1fr 1fr;
-
   &-cover {
     width: 55px;
     height: 55px;
@@ -33,9 +29,5 @@
 
   &-time {
     grid-area: time;
-  }
-
-  @include media(mobile) {
-    grid-template-columns: 1fr;
   }
 }
