@@ -8,36 +8,38 @@
 <body>
 <header class="header">
   <div class="container">
-    <nav class="navigation tt-uppercase">
-      <h3 class="navigation-logo">
+    <div class="navigation tt-uppercase">
+      <div class="navigation-logo">
         <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
-        Music Box
-      </h3>
+        <span class="navigation-logo-title">Music Box</span>
+      </div>
 
-      <ul class="navigation-menu">
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link navigation-menu-link--active" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="#">Каталог</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="artist.html">Исполнители</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="#">Контакты</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="navigation-menu">
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link navigation-menu-link--active" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Каталог</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="artist.html">Исполнители</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
       <input class="navigation-search" type="text" placeholder="Поиск...">
-    </nav>
+    </div>
   </div>
 </header>
 
 <section class="page-description page-description--main" id="page-description">
   <div class="container">
     <h1>Онлайн музыка где угодно</h1>
-    <h2 class="mb-2 mb-mobile-1">без ограничений</h2>
+    <h2 class="mb-3 mb-mobile-1">без ограничений</h2>
     <p class="fs-1 color-white mb-1">
       Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
     </p>
@@ -61,51 +63,47 @@
 
 <main>
   <section class="section" id="page-pricing">
-    <div class="container">
-      <h2 class="section-title">Формы подписки</h2>
+    <h2 class="section-title">Формы подписки</h2>
 
-      <div class="section-content">
-        <div class="pricing-list">
-          <div class="pricing-item pricing-item--free">
-            <h3 class="pricing-item-title">Бесплатная</h3>
-            <p class="pricing-item-value">
-              0 <span class="pricing-item-currency">руб.</span>
-            </p>
-            <a class="btn btn-white-outline btn-fill mb-7" href="#">Оформить</a>
-            <p class="pricing-item-footer">
-              Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама
-            </p>
-          </div>
+    <div class="pricing-list">
+      <div class="pricing-item pricing-item--free">
+        <h3 class="pricing-item-title">Бесплатная</h3>
+        <p class="pricing-item-value">
+          0 <span class="pricing-item-currency">руб.</span>
+        </p>
+        <a class="btn btn-white-outline btn-fill mb-7 fs-1" href="#">Оформить</a>
+        <p class="pricing-item-footer">
+          Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама
+        </p>
+      </div>
 
-          <div class="pricing-item pricing-item--standart">
-            <h3 class="pricing-item-title">Стандартная</h3>
-            <p class="pricing-item-value">
-              250 <span class="pricing-item-currency">руб.</span>
-            </p>
-            <a class="btn btn-white-outline btn-fill mb-7" href="#">Оформить</a>
-            <p class="pricing-item-footer">
-              Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
-            </p>
-          </div>
+      <div class="pricing-item pricing-item--standart">
+        <h3 class="pricing-item-title">Стандартная</h3>
+        <p class="pricing-item-value">
+          250 <span class="pricing-item-currency">руб.</span>
+        </p>
+        <a class="btn btn-white-outline btn-fill mb-7 fs-1" href="#">Оформить</a>
+        <p class="pricing-item-footer">
+          Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+        </p>
+      </div>
 
-          <div class="pricing-item pricing-item--premium">
-            <h3 class="pricing-item-title">Премиум</h3>
-            <p class="pricing-item-value">
-              500 <span class="pricing-item-currency">руб.</span>
-            </p>
-            <a class="btn btn-white-outline btn-fill mb-7" href="#">Оформить</a>
-            <p class="pricing-item-footer">
-              Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
-            </p>
-          </div>
-        </div>
-
-        <p class="fs-1 text-center">
-          На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать
-          все композиции на ваше устройство и слушать музыку без подключения к интернету
+      <div class="pricing-item pricing-item--premium">
+        <h3 class="pricing-item-title">Премиум</h3>
+        <p class="pricing-item-value">
+          500 <span class="pricing-item-currency">руб.</span>
+        </p>
+        <a class="btn btn-white-outline btn-fill mb-7 fs-1" href="#">Оформить</a>
+        <p class="pricing-item-footer">
+          Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
         </p>
       </div>
     </div>
+
+    <p class="fs-1 text-center">
+      На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать
+      все композиции на ваше устройство и слушать музыку без подключения к интернету
+    </p>
   </section>
 
   <section class="section" id="page-news">
