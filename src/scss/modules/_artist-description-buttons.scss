@@ -1,0 +1,13 @@
+.artist-description-buttons {
+  @include flex(map-get($spacers, 1));
+
+  & > .btn {
+    width: 200px;
+
+    text-align: start;
+  }
+
+  @include media(mobile) {
+    @include flex(map-get($spacers, 2), column);
+  }
+}

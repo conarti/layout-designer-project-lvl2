@@ -3,7 +3,13 @@
 
   text-align: center;
 
-  @include bg-image("../images/banner.png");
+  &--main {
+    @include bg-image("../images/banner.png");
+  }
+
+  &--artist {
+    @include bg-image("../images/Morten Harket.png");
+  }
 
   @include media(mobile) {
     padding: 250px 0;
