@@ -25,3 +25,23 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin button-outline-variant($color) {
+  border: 1px solid $color;
+
+  color: $color;
+
+  &:hover {
+    background-color: rgba($color, $bg-opacity-hover);
+  }
+}
+
+@mixin button-variant($color, $text, $color-hover: rgba($color, $bg-opacity-hover)) {
+  color: $text;
+
+  background-color: $color;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}

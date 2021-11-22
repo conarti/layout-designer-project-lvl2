@@ -12,6 +12,10 @@
 
   transition: $btn-transition;
 
+  &-sm {
+    padding: 16px 30px;
+  }
+
   &-pill {
     border-radius: $btn-pill-radius;
   }
@@ -21,22 +25,14 @@
   }
 
   &-white-outline {
-    border: 1px solid $white;
+    @include button-outline-variant($white);
+  }
 
-    color: $white;
-
-    &:hover {
-      background-color: rgba($white, $bg-opacity-hover);
-    }
+  &-dark-gray-outline {
+    @include button-outline-variant($dark-gray);
   }
 
   &-primary {
-    color: $main-text-color;
-
-    background-color: $primary;
-
-    &:hover {
-      background-color: $primary-hover;
-    }
+    @include button-variant($primary, $main-text-color, $primary-hover);
   }
 }
