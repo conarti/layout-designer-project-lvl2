@@ -24,15 +24,15 @@
     display: block;
   }
 
-  &-white-outline {
-    @include button-outline-variant($white);
+  @each $name, $color in $buttons-outline {
+    &-#{$name}-outline {
+      @include button-outline-variant($color);
+    }
   }
 
-  &-dark-gray-outline {
-    @include button-outline-variant($dark-gray);
-  }
-
-  &-primary {
-    @include button-variant($primary, $main-text-color, $primary-hover);
+  @each $name, $options in $buttons {
+    &-#{$name} {
+      @include button-variant(map-get($options, color), map-get($options, text-color), map-get($options, hover-color))
+    }
   }
 }

@@ -36,7 +36,11 @@
   }
 }
 
-@mixin button-variant($color, $text, $color-hover: rgba($color, $bg-opacity-hover)) {
+@mixin button-variant($color, $text, $color-hover) {
+  @if($color-hover == null) {
+    $color-hover: darken($color, 5);
+  }
+
   color: $text;
 
   background-color: $color;

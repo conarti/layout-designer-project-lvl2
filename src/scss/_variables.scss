@@ -20,7 +20,6 @@ $red: #95390c;
 /** THEME VARS **/
 
 $primary: $green;
-$primary-hover: darken($primary, 5);
 
 $main-text-color: $white;
 $secondary-text-color: $dark-gray;
@@ -40,7 +39,21 @@ $container-width: 1200px;
 
 /** COMPONENTS **/
 
-$btn-pill-radius: 50rem;
+$btn-pill-radius: 32px;
+$buttons: (
+  primary: (
+    color: $primary,
+    text-color: $main-text-color
+  ),
+  orange: (
+    color: $orange,
+    text-color: $main-text-color
+  )
+);
+$buttons-outline: (
+  white: $white,
+  dark-gray: $dark-gray
+);
 
 $input-background-hover: rgba($main-text-color, $bg-opacity-hover);
 $input-background-focus: rgba($main-text-color, $bg-opacity-focus);
