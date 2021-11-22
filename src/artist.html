@@ -6,110 +6,168 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="navigation tt-uppercase">
-        <h3 class="navigation-logo">
-          <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
-          Music Box
-        </h3>
+<header class="header">
+  <div class="container">
+    <nav class="navigation tt-uppercase">
+      <h3 class="navigation-logo">
+        <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
+        Music Box
+      </h3>
 
-        <ul class="navigation-menu">
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="#">Главная</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="#">Каталог</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link navigation-menu-link--active" href="#">Исполнители</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <ul class="navigation-menu">
+        <li class="navigation-menu-item">
+          <a class="navigation-menu-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-menu-item">
+          <a class="navigation-menu-link" href="#">Каталог</a>
+        </li>
+        <li class="navigation-menu-item">
+          <a class="navigation-menu-link navigation-menu-link--active" href="#">Исполнители</a>
+        </li>
+        <li class="navigation-menu-item">
+          <a class="navigation-menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
 
-        <input class="navigation-search" type="text" placeholder="Поиск...">
-      </nav>
+      <input class="navigation-search" type="text" placeholder="Поиск...">
+    </nav>
+  </div>
+</header>
+
+<section class="page-description page-description--artist" id="page-description">
+  <div class="container">
+    <h1 class="text-start mb-1">Morten Harket</h1>
+    <p class="fs-1 text-start color-white mb-5">24 875 поклонников</p>
+    <div class="artist-description-buttons">
+      <button class="btn btn-purple btn-icon btn-icon--play">
+        <span>Микс</span>
+      </button>
+      <button class="btn btn-red btn-icon btn-icon--heart">
+        <span>В избранное</span>
+      </button>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section class="page-description page-description--artist" id="page-description">
+<main>
+  <section class="section section--artist" id="page-popular-track">
     <div class="container">
-      <h1 class="text-start mb-1">Morten Harket</h1>
-      <p class="fs-1 text-start color-white mb-5">24 875 поклонников</p>
-      <div class="artist-description-buttons">
-        <button class="btn btn-purple btn-icon btn-icon--play">
-          <span>Микс</span>
-        </button>
-        <button class="btn btn-red btn-icon btn-icon--heart">
-          <span>В избранное</span>
-        </button>
-      </div>
-    </div>
-  </section>
+      <h2 class="section-title">Популярные треки</h2>
 
-
-  <footer class="footer bg-gradient">
-    <div class="container footer-content">
-      <div class="footer-col">
-        <h2 class="footer-col-title">О нас</h2>
-        <a class="footer-link" href="#">История компании</a>
-        <a class="footer-link" href="#">Карьера</a>
-        <a class="footer-link" href="#">Особенности</a>
-        <a class="footer-link" href="#">Пресса</a>
-      </div>
-      <div class="footer-col">
-        <h2 class="footer-col-title">Поддержка</h2>
-        <a class="footer-link" href="#">База знаний</a>
-        <a class="footer-link" href="#">Тарифы</a>
-        <a class="footer-link" href="#">Мобильное приложение</a>
-        <a class="footer-link" href="#">Условия использования</a>
-      </div>
-      <div class="footer-col">
-        <h2 class="footer-col-title">Контакты</h2>
-        <a class="footer-link" href="mailto:hello@music.box">hello@music.box</a>
-        <p class="footer-link">Russia, Moscow. Music Box studio</p>
-        <a class="footer-link" href="tel:+74999999999">+ 7 499 999 99 99</a>
-      </div>
-      <div class="footer-col">
-        <h2 class="footer-col-title">Подписывайтесь</h2>
-        <div class="footer-socials">
-          <a href="#">
-            <img src="./images/Google+.png" alt="google">
-          </a>
-          <a href="#">
-            <img src="./images/Twitter.png" alt="twitter">
-          </a>
-          <a href="#">
-            <img src="./images/Facebook.png" alt="facebook">
-          </a>
-          <a href="#">
-            <img src="./images/Instagram.png" alt="instagram">
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr class="divider">
-    <div class="container">
-      <ul class="footer-nav">
-        <li>
-          <a class="footer-link" href="#">Магазин</a>
+      <ul class="popular-tracks">
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Wild%20Seed.png" alt="Wild Seed">
+          <h3 class="popular-tracks-song">Spanish Step</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">4:07</p>
         </li>
-        <li>
-          <a class="footer-link" href="#">Обслуживание</a>
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Letter%20from%20Egypt.png" alt="Letter From Egypt">
+          <h3 class="popular-tracks-song">With You - With Me</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">3:48</p>
         </li>
-        <li>
-          <a class="footer-link" href="#">Блог</a>
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Brother.png" alt="Brother">
+          <h3 class="popular-tracks-song">Brother</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">5:05</p>
         </li>
-        <li>
-          <a class="footer-link" href="#">Поддержка</a>
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Wild%20Seed.png" alt="Wild Seed">
+          <h3 class="popular-tracks-song">Brodsky Tune</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">4:24</p>
         </li>
-        <li>
-          <a class="footer-link" href="#">Контакты</a>
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Letter%20from%20Egypt.png" alt="Letter From Egypt">
+          <h3 class="popular-tracks-song">Darkspace</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">3:45</p>
+        </li>
+        <li class="popular-tracks-info">
+          <img class="popular-tracks-cover" src="./images/Out%20of%20My%20Hands.png" alt="Out Of My Hands">
+          <h3 class="popular-tracks-song">Burn Money Burn</h3>
+          <p class="popular-tracks-author">Morten Harket</p>
+          <p class="popular-tracks-time">3:52</p>
         </li>
       </ul>
     </div>
-  </footer>
+  </section>
+
+  <section class="section section--artist">
+    <div class="container">
+      <h2 class="section-title">Дискография</h2>
+    </div>
+  </section>
+
+  <section class="section section--artist section--same-vertical">
+    <div class="container">
+      <h2 class="section-title">Похожие исполнители</h2>
+    </div>
+  </section>
+</main>
+
+<footer class="footer bg-gradient">
+  <div class="container footer-content">
+    <div class="footer-col">
+      <h2 class="footer-col-title">О нас</h2>
+      <a class="footer-link" href="#">История компании</a>
+      <a class="footer-link" href="#">Карьера</a>
+      <a class="footer-link" href="#">Особенности</a>
+      <a class="footer-link" href="#">Пресса</a>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-col-title">Поддержка</h2>
+      <a class="footer-link" href="#">База знаний</a>
+      <a class="footer-link" href="#">Тарифы</a>
+      <a class="footer-link" href="#">Мобильное приложение</a>
+      <a class="footer-link" href="#">Условия использования</a>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-col-title">Контакты</h2>
+      <a class="footer-link" href="mailto:hello@music.box">hello@music.box</a>
+      <p class="footer-link">Russia, Moscow. Music Box studio</p>
+      <a class="footer-link" href="tel:+74999999999">+ 7 499 999 99 99</a>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-col-title">Подписывайтесь</h2>
+      <div class="footer-socials">
+        <a href="#">
+          <img src="./images/Google+.png" alt="google">
+        </a>
+        <a href="#">
+          <img src="./images/Twitter.png" alt="twitter">
+        </a>
+        <a href="#">
+          <img src="./images/Facebook.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="./images/Instagram.png" alt="instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="divider">
+  <div class="container">
+    <ul class="footer-nav">
+      <li>
+        <a class="footer-link" href="#">Магазин</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Обслуживание</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Блог</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Поддержка</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>

@@ -11,6 +11,10 @@
     text-align: center;
   }
 
+  &--artist &-title {
+    text-align: start;
+  }
+
   &-content {
     display: flex;
     flex-direction: column;

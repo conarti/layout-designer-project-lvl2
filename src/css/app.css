@@ -339,6 +339,9 @@ a {
   margin-bottom: 45px;
   text-align: center;
 }
+.section--artist .section-title {
+  text-align: start;
+}
 .section-content {
   display: flex;
   flex-direction: column;
@@ -777,6 +780,42 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 24px;
+  }
+}
+
+.popular-tracks {
+  display: grid;
+  gap: 50px 25px;
+  grid-template-columns: 1fr 1fr;
+}
+.popular-tracks-cover {
+  width: 55px;
+  height: 55px;
+}
+.popular-tracks-info {
+  display: grid;
+  grid-template-areas: "cover song time" "cover author time";
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  width: 100%;
+  column-gap: 15px;
+  font-size: 12.8px;
+}
+.popular-tracks-cover {
+  grid-area: cover;
+}
+.popular-tracks-song {
+  grid-area: song;
+}
+.popular-tracks-author {
+  grid-area: author;
+}
+.popular-tracks-time {
+  grid-area: time;
+}
+@media screen and (max-width: 1239.97px) {
+  .popular-tracks {
+    grid-template-columns: 1fr;
   }
 }
 
