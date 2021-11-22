@@ -6,10 +6,11 @@
   font-stretch: normal;
   src: url("../fonts/Roboto-Regular.ttf") format("ttf");
 }
+/** THEME VARS **/
 /** GRID **/
 /** COMPONENTS **/
 /** SIZES **/
-/** UTILITIES (auto generating with utilities/api) **/
+/** These values are used to generate utilities. Also you need to use it for our own css components **/
 .tt-uppercase {
   text-transform: uppercase !important;
 }
@@ -238,6 +239,7 @@ h3,
 h4,
 h5,
 h6,
+p,
 ul {
   margin: 0;
 }
@@ -320,7 +322,7 @@ a {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .section-title {
   margin-bottom: 45px;
@@ -465,6 +467,9 @@ a {
   background-color: transparent;
   transition: color 0.25s, background-color 0.25s;
 }
+.btn-sm {
+  padding: 16px 30px;
+}
 .btn-pill {
   border-radius: 50rem;
 }
@@ -477,6 +482,13 @@ a {
 }
 .btn-white-outline:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-dark-gray-outline {
+  border: 1px solid #cacaca;
+  color: #cacaca;
+}
+.btn-dark-gray-outline:hover {
+  background-color: rgba(202, 202, 202, 0.1);
 }
 .btn-primary {
   color: #ffffff;
@@ -503,7 +515,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   column-gap: 50px;
   margin-bottom: 50px;
 }
@@ -553,6 +565,65 @@ a {
   background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
+}
+
+.news-item {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 24px;
+  grid-template-rows: min-content auto;
+}
+.news-item--img-left {
+  grid-template-areas: "image body" "image footer";
+  grid-template-columns: min-content auto;
+}
+.news-item--img-right {
+  grid-template-areas: "body image" "footer image";
+  grid-template-columns: auto min-content;
+}
+.news-item-image {
+  grid-area: image;
+}
+.news-item-body {
+  grid-area: body;
+}
+.news-item-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: capitalize;
+  line-height: 45px;
+}
+.news-item-text {
+  font-size: 16px;
+}
+.news-item-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  margin-bottom: 48px;
+}
+.news-item-author-name {
+  color: #f89202;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.news-item-date {
+  font-size: 12px;
+}
+.news-item-footer {
+  grid-area: footer;
+}
+@media screen and (max-width: 1239.97px) {
+  .news-item {
+    grid-template-areas: "image image" "body body" "footer footer";
+  }
+  .news-item-image {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
