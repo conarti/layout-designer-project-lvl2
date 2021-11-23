@@ -1,8 +1,10 @@
 .section{
-  padding: 100px 0 0;
+  padding: 100px 20px 0;
+  max-width: $container-width + 40px;
+  margin: 0 auto;
 
   &--same-vertical {
-    padding: 100px 0;
+    padding: 100px 20px;
   }
 
   &-title {
