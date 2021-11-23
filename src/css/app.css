@@ -392,7 +392,7 @@ a {
   padding: 100px 0;
 }
 .section-title {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   text-align: center;
 }
 .section--artist .section-title {
@@ -696,27 +696,36 @@ a {
 }
 
 .pricing-item {
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   color: #ffffff;
   text-align: center;
 }
 .pricing-item-title {
   margin-bottom: 200px;
-  margin-top: 24px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
 }
 .pricing-item-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  margin-bottom: 40px;
   font-size: 64px;
+  line-height: 64px;
 }
 .pricing-item-currency {
   font-size: 32px;
+  line-height: 1.5;
   text-transform: uppercase;
-  vertical-align: text-top;
 }
 .pricing-item-footer {
-  margin-bottom: 64px;
-  font-size: 13px;
+  margin-bottom: 40px;
+  font-size: 12.8px;
 }
 .pricing-item--free {
   background-image: url("../images/subscribe_1.png");
