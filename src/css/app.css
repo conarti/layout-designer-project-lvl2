@@ -686,7 +686,7 @@ a {
   justify-content: center;
   flex-wrap: nowrap;
   column-gap: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1239.97px) {
   .pricing-list {
@@ -700,6 +700,8 @@ a {
 .pricing-item {
   padding: 1.5rem;
   border-radius: 1rem;
+  box-sizing: border-box;
+  max-width: 366px;
   color: #ffffff;
   text-align: center;
 }

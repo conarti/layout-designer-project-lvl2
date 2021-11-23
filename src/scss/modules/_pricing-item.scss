@@ -1,6 +1,8 @@
 .pricing-item {
   padding: 1.5rem;
   border-radius: 1rem;
+  box-sizing: border-box;
+  max-width: 366px;
 
   color: $main-text-color;
   text-align: center;
