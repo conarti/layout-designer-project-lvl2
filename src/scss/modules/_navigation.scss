@@ -45,7 +45,6 @@
 
     @include media(custom, 840px) {
       flex-direction: column;
-      align-items: flex-start;
       margin-bottom: map-get($spacers, 1);
     }
 
