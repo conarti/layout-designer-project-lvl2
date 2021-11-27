@@ -695,11 +695,12 @@ a {
 }
 
 .section {
-  padding: 100px 20px 0;
+  padding-top: 100px;
 }
 
 .section-same-paddings {
-  padding: 100px 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .limit-content {
@@ -875,8 +876,8 @@ a {
 }
 
 .page-description {
-  padding: 200px 0;
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .page-description--main {
   background-image: url("../images/banner.png");
@@ -890,7 +891,8 @@ a {
 }
 @media screen and (max-width: 1239.97px) {
   .page-description {
-    padding: 250px 0 200px;
+    padding-top: 250px;
+    padding-bottom: 200px;
   }
 }
 
