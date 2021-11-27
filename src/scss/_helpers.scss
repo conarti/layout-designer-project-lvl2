@@ -10,17 +10,19 @@
   margin-left: auto;
 }
 
-.section {
-  padding-top: 100px;
-}
-
-.section-same-paddings {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.py-10 {
+  padding-top: map-get($spacers, 10);
+  padding-bottom: map-get($spacers, 10);
 }
 
 .limit-content {
   max-width: $content-max-width  + $content-padding * 2;
   padding: 0 $content-padding;
   margin: 0 auto;
+}
+
+.flex-two-rows {
+  & > * {
+    flex-basis: 50%;
+  }
 }

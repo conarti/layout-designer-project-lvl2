@@ -26,6 +26,14 @@ $utilities: (
     values: $spacers,
     responsive: true
   ),
+  "mt": (
+    property: margin-top,
+    values: (1: map-get($spacers, 1))
+  ),
+  "pt": (
+    property: padding-top,
+    values: (10: map-get($spacers, 10))
+  ),
   "color": (
     property: color,
     values: (
@@ -38,11 +46,11 @@ $utilities: (
   ),
   "d": (
     property: display,
-    values: flex
+    values: flex block
   ),
   "flex": (
     property: flex-direction,
-    values: column row,
+    values: column row column-reverse,
     responsive: true
   ),
   "justify-content": (
