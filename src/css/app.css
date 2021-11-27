@@ -763,8 +763,8 @@ a {
 }
 
 .py-10 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
 .limit-content {
@@ -987,7 +987,7 @@ a {
 }
 
 .pricing-card {
-  padding: 24px;
+  padding: 16px 24px;
   border-radius: 16px;
   box-sizing: border-box;
   max-width: 366px;
@@ -1074,7 +1074,7 @@ a {
   grid-area: image;
 }
 .news-item-body {
-  margin-bottom: 48px;
+  margin-bottom: 16px;
   grid-area: body;
 }
 @media screen and (max-width: 1239.97px) {
@@ -1115,14 +1115,18 @@ a {
   font-size: 12px;
 }
 
-.footer {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+.footer-full-nav {
+  padding-top: 62px;
+  padding-bottom: 72px;
+}
+
+.footer-nav {
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .footer-col {
   min-width: 270px;
-  margin-bottom: 75px;
 }
 .footer-col-title {
   font-size: 18px;
@@ -1137,7 +1141,7 @@ a {
 }
 
 .divider {
-  margin: 0 0 40px;
+  margin: 0;
   border-color: #cacaca;
 }
 

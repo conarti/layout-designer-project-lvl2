@@ -28,7 +28,7 @@
   }
 
   &-body {
-    margin-bottom: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 1);
     grid-area: body;
 
     @include media(mobile) {
