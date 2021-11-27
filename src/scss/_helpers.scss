@@ -2,23 +2,23 @@
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
-.grid {
-  display: grid;
-  gap: 25px 50px;
+.mx-auto {
+  margin: 0 auto;
+}
 
-  &--items-2 {
-    grid-template-columns: repeat(2, 1fr);
+.ms-auto {
+  margin-left: auto;
+}
 
-    @include media(mobile) {
-      grid-template-columns: 1fr;
-    }
-  }
+.section {
+  padding: 100px 20px 0;
+}
 
-  &--items-4 {
-    grid-template-columns: repeat(4, min-content);
+.section-same-paddings {
+  padding: 100px 20px;
+}
 
-    @include media(mobile) {
-      grid-template-columns: repeat(2, min-content);
-    }
-  }
+.limit-content {
+  max-width: $content-max-width  + $content-padding * 2;
+  padding: 0 $content-padding;
 }

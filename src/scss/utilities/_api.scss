@@ -12,7 +12,7 @@
 
 @mixin generate-utility($name, $property, $values, $responsive) {
   @each $value in $values {
-    .#{$name}-#{getUtilityProperties($value, name)} {
+    .#{$name}-#{"" + getUtilityProperties($value, name)} {
       #{$property}: getUtilityProperties($value, value) !important;
     }
   }

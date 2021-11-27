@@ -9,7 +9,8 @@ $utilities: (
   ),
   "fw": (
     property: font-weight,
-    values: normal bold bolder 400 500 600 700 800
+    values: normal bold bolder 400 500 600 700 800,
+    responsive: true
   ),
   "m": (
     property: margin,
@@ -17,6 +18,11 @@ $utilities: (
   ),
   "mb": (
     property: margin-bottom,
+    values: $spacers,
+    responsive: true
+  ),
+  "me": (
+    property: margin-right,
     values: $spacers,
     responsive: true
   ),
@@ -29,5 +35,33 @@ $utilities: (
   "text": (
     property: text-align,
     values: center start
+  ),
+  "d": (
+    property: display,
+    values: flex
+  ),
+  "flex": (
+    property: flex-direction,
+    values: column row,
+    responsive: true
+  ),
+  "justify-content": (
+    property: justify-content,
+    values: center,
+    responsive: true
+  ),
+  "align-items": (
+    property: align-items,
+    values: center flex-start,
+    responsive: true
+  ),
+  "row-gap": (
+    property: row-gap,
+    values: $spacers,
+    responsive: true
+  ),
+  "column-gap": (
+    property: column-gap,
+    values: $spacers
   )
 );

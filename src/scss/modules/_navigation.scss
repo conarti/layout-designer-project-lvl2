@@ -1,106 +1,20 @@
 .navigation {
-  font-weight: 400;
-  font-size: 11px;
-  line-height: $line-height;
-
-  @include flex(null, row, center);
-
-  @include media(custom, 840px) {
-    flex-direction: column;
-    align-items: flex-start;
+  &-logo-icon {
+    width: map-get($spacers, 2);
+    height: map-get($spacers, 2);
   }
 
-  &-logo {
-    margin-right: 90px;
+  &-link {
+    color: $link-color;
 
-    @include flex(null, row, center);
-
-    &-title {
-      color: $main-text-color;
-      font-weight: 400;
-
-      @include media(mobile) {
-        font-size: 11px;
-        font-weight: 700;
-      }
-    }
-
-    &-icon {
-      width: map-get($spacers, 2);
-      height: map-get($spacers, 2);
-      margin-right: map-get($spacers, 1);
-    }
-
-    @include media(mobile) {
-      margin-right: 0;
-    }
-
-    @include media(custom, 840px) {
-      margin-bottom: map-get($spacers, 1);
-    }
-  }
-
-  &-menu {
-    @include flex(map-get($spacers, 2), row);
-
-    @include media(custom, 840px) {
-      flex-direction: column;
-      margin-bottom: map-get($spacers, 1);
-    }
-
-    &-item {
-      line-height: 16px;
-    }
-
-    &-link {
-      color: $link-color;
-      font-size: 11px;
-
-      transition: color 0.25s;
-
-      &:hover {
-        color: $link-hover-color;
-      }
-
-      &--active {
-        color: $link-active-color;
-      }
-
-      @include media(mobile) {
-        font-weight: bold;
-      }
-    }
-  }
-
-  &-search {
-    margin-left: auto;
-    padding: 5px 10px;
-    border-radius: 50px;
-    min-width: 248px;
-    height: 25px;
-
-    color: $search-placeholder-color;
-    font-size: 13.3px;
-    line-height: 15px;
-    text-transform: uppercase;
-
-    background-color: $dark;
-
-    transition: $form-transition;
-
-    @include media(custom, 840px) {
-      width: 100%;
-      margin: 0;
-    }
+    transition: color 0.25s;
 
     &:hover {
-      box-shadow: 0 0 0 2px $search-border-hover-color;
+      color: $link-hover-color;
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px $search-border-focus-color;
-
-      color: $secondary-text-color;
+    &--active {
+      color: $link-active-color;
     }
   }
 }

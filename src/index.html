@@ -6,33 +6,33 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <div class="navigation tt-uppercase">
-      <div class="navigation-logo">
-        <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
-        <span class="navigation-logo-title">Music Box</span>
-      </div>
-
-      <nav>
-        <ul class="navigation-menu">
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link navigation-menu-link--active" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="#">Каталог</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="artist.html">Исполнители</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <input class="navigation-search" type="text" placeholder="Поиск...">
+<header class="header limit-content mx-auto">
+  <div
+    class="navigation mb-mobile-1 tt-uppercase d-flex flex-mobile-column align-items-center align-items-mobile-flex-start"
+  >
+    <div class="d-flex align-items-center me-9 mb-mobile-1">
+      <img class="navigation-logo-icon me-1 me-mobile-0" src="./images/logo.svg" alt="logo">
+      <span class="color-white fs-ultra-small fw-normal fw-mobile-bold">Music Box</span>
     </div>
+
+    <nav class="mb-mobile-1">
+      <ul class="d-flex column-gap-2 flex-mobile-column fs-ultra-small fw-mobile-bold">
+        <li>
+          <a class="navigation-link navigation-link--active" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="navigation-link" href="#">Каталог</a>
+        </li>
+        <li>
+          <a class="navigation-link" href="artist.html">Исполнители</a>
+        </li>
+        <li>
+          <a class="navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <input class="search ms-auto" type="text" placeholder="Поиск...">
   </div>
 </header>
 

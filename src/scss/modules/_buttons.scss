@@ -49,13 +49,13 @@
   }
 
   @each $name, $color in $buttons-outline {
-    &-#{$name}-outline {
+    &-#{"" + $name}-outline {
       @include button-outline-variant($color);
     }
   }
 
   @each $name, $options in $buttons {
-    &-#{$name} {
+    &-#{"" + $name} {
       @include button-variant(map-get($options, color), map-get($options, text-color), map-get($options, hover-color))
     }
   }

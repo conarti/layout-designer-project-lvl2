@@ -1,0 +1,30 @@
+.search {
+  padding: 5px 10px;
+  border-radius: 50px;
+  min-width: 248px;
+  height: 25px;
+
+  color: $search-placeholder-color;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  background-color: $dark;
+
+  transition: $form-transition;
+
+  @include media(mobile) {
+    width: 100%;
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px $search-border-hover-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $search-border-focus-color;
+
+    color: $secondary-text-color;
+  }
+}
