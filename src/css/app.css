@@ -706,6 +706,7 @@ a {
 .limit-content {
   max-width: 1240px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .header {
@@ -715,6 +716,11 @@ a {
   left: 0;
 }
 
+@media screen and (max-width: 1239.97px) {
+  .navigation {
+    margin-bottom: 18px;
+  }
+}
 .navigation-logo-icon {
   width: 24px;
   height: 24px;

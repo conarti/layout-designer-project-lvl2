@@ -1,4 +1,8 @@
 .navigation {
+  @include media(mobile) {
+    margin-bottom: 18px;
+  }
+
   &-logo-icon {
     width: map-get($spacers, 2);
     height: map-get($spacers, 2);
