@@ -21,8 +21,6 @@
   margin: 0 auto;
 }
 
-.flex-two-rows {
-  & > * {
-    flex-basis: 50%;
-  }
+.max-width-600 {
+  max-width: 600px;
 }

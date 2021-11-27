@@ -773,8 +773,8 @@ a {
   margin: 0 auto;
 }
 
-.flex-two-rows > * {
-  flex-basis: 50%;
+.max-width-600 {
+  max-width: 600px;
 }
 
 .header {
@@ -1115,22 +1115,12 @@ a {
   font-size: 12px;
 }
 
-.app-image {
-  max-width: 333px;
-  height: auto;
-  margin: 0 auto;
-  background-size: cover;
-}
-
 .footer {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
 .footer-col {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   min-width: 270px;
   margin-bottom: 75px;
 }
@@ -1146,31 +1136,9 @@ a {
   }
 }
 
-.footer-link {
-  color: #e0e0e0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-}
-
 .divider {
-  height: 2px;
   margin: 0 0 40px;
-  background-color: #cacaca;
-}
-
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-}
-
-.footer-socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  border-color: #cacaca;
 }
 
 .artist-description-buttons {
