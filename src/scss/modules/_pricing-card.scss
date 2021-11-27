@@ -1,6 +1,6 @@
 .pricing-card {
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: map-get($spacers, 1) map-get($spacers, 2);
+  border-radius: map-get($spacers, 1);
   box-sizing: border-box;
   max-width: 366px;
 

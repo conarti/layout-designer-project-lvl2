@@ -2,6 +2,6 @@
   @include flex(50px, row, null, center);
 
   @include media(mobile) {
-    @include flex(50px, column)
+    @include flex(50px, column);
   }
 }
