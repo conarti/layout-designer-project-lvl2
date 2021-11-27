@@ -987,8 +987,8 @@ a {
 }
 
 .pricing-card {
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 24px;
+  border-radius: 16px;
   box-sizing: border-box;
   max-width: 366px;
   color: #ffffff;
