@@ -1,4 +1,4 @@
-.pricing-item {
+.pricing-card {
   padding: 1.5rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -7,12 +7,21 @@
   color: $main-text-color;
   text-align: center;
 
+  @include media(mobile) {
+    max-width: none;
+  }
+
   &-title {
     margin-bottom: 200px;
 
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
+
+    @include media(mobile) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &-value {
@@ -39,7 +48,7 @@
     @include bg-image("../images/subscribe_1.png")
   }
 
-  &--standart {
+  &--standard {
     @include bg-image("../images/subscribe_2.png")
   }
 

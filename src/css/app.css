@@ -906,9 +906,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   column-gap: 50px;
-  margin-bottom: 40px;
 }
 @media screen and (max-width: 1239.97px) {
   .pricing-list {
@@ -919,7 +918,7 @@ a {
   }
 }
 
-.pricing-item {
+.pricing-card {
   padding: 1.5rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -927,13 +926,24 @@ a {
   color: #ffffff;
   text-align: center;
 }
-.pricing-item-title {
+@media screen and (max-width: 1239.97px) {
+  .pricing-card {
+    max-width: none;
+  }
+}
+.pricing-card-title {
   margin-bottom: 200px;
   font-size: 24px;
   line-height: 36px;
   font-weight: 400;
 }
-.pricing-item-value {
+@media screen and (max-width: 1239.97px) {
+  .pricing-card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.pricing-card-value {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -944,26 +954,26 @@ a {
   font-size: 64px;
   line-height: 64px;
 }
-.pricing-item-currency {
+.pricing-card-currency {
   font-size: 32px;
   line-height: 1.5;
   text-transform: uppercase;
 }
-.pricing-item-footer {
+.pricing-card-footer {
   margin-bottom: 40px;
   font-size: 12.8px;
 }
-.pricing-item--free {
+.pricing-card--free {
   background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
 }
-.pricing-item--standart {
+.pricing-card--standard {
   background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
 }
-.pricing-item--premium {
+.pricing-card--premium {
   background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
