@@ -19,3 +19,24 @@
 .max-width-600 {
   max-width: 600px;
 }
+
+.grid {
+  display: grid;
+  gap: 25px 50px;
+
+  &--items-2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--items-4 {
+    grid-template-columns: repeat(4, min-content);
+
+    @include media(mobile) {
+      grid-template-columns: repeat(2, min-content);
+    }
+  }
+}

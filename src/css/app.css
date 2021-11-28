@@ -776,6 +776,27 @@ a {
   max-width: 600px;
 }
 
+.grid {
+  display: grid;
+  gap: 25px 50px;
+}
+.grid--items-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 1239.97px) {
+  .grid--items-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.grid--items-4 {
+  grid-template-columns: repeat(4, min-content);
+}
+@media screen and (max-width: 1239.97px) {
+  .grid--items-4 {
+    grid-template-columns: repeat(2, min-content);
+  }
+}
+
 .header {
   position: absolute;
   top: 25px;
