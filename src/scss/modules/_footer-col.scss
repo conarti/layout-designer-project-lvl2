@@ -7,8 +7,4 @@
     font-weight: bold;
     margin-bottom: map-get($spacers, 1);
   }
-
-  @include media(mobile) {
-    margin-bottom: 30px;
-  }
 }

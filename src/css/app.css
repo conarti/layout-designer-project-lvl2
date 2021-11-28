@@ -762,11 +762,6 @@ a {
   margin-left: auto;
 }
 
-.py-10 {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
-}
-
 .limit-content {
   max-width: 1240px;
   padding: 0 20px;
@@ -987,7 +982,7 @@ a {
 }
 
 .pricing-card {
-  padding: 16px 24px;
+  padding: 24px 24px;
   border-radius: 16px;
   box-sizing: border-box;
   max-width: 366px;
@@ -996,6 +991,7 @@ a {
 }
 @media screen and (max-width: 1239.97px) {
   .pricing-card {
+    padding: 16px 24px 24px;
     max-width: none;
   }
 }
@@ -1119,6 +1115,11 @@ a {
   padding-top: 62px;
   padding-bottom: 72px;
 }
+@media screen and (max-width: 1239.97px) {
+  .footer-full-nav {
+    row-gap: 30px;
+  }
+}
 
 .footer-nav {
   padding-top: 40px;
@@ -1133,11 +1134,6 @@ a {
   line-height: 27px;
   font-weight: bold;
   margin-bottom: 16px;
-}
-@media screen and (max-width: 1239.97px) {
-  .footer-col {
-    margin-bottom: 30px;
-  }
 }
 
 .divider {

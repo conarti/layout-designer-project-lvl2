@@ -1,5 +1,5 @@
 .pricing-card {
-  padding: map-get($spacers, 1) map-get($spacers, 2);
+  padding: map-get($spacers, 2) map-get($spacers, 2);
   border-radius: map-get($spacers, 1);
   box-sizing: border-box;
   max-width: 366px;
@@ -8,6 +8,7 @@
   text-align: center;
 
   @include media(mobile) {
+    padding: map-get($spacers, 1) map-get($spacers, 2) map-get($spacers, 2);
     max-width: none;
   }
 
