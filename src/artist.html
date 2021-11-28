@@ -6,39 +6,41 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <nav class="navigation tt-uppercase">
-      <h3 class="navigation-logo">
-        <img class="navigation-logo-icon" src="./images/logo.svg" alt="logo">
-        Music Box
-      </h3>
+<header class="header limit-content">
+  <div
+    class="navigation tt-uppercase d-flex flex-mobile-column align-items-center align-items-mobile-flex-start"
+  >
+    <div class="d-flex align-items-center me-9 mb-mobile-1">
+      <img class="navigation-logo-icon me-1" src="./images/logo.svg" alt="logo">
+      <span class="color-white fs-ultra-small fw-normal fw-mobile-bold">Music Box</span>
+    </div>
 
-      <ul class="navigation-menu">
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="#">Главная</a>
+    <nav class="mb-mobile-1">
+      <ul class="d-flex column-gap-2 flex-mobile-column fs-ultra-small fw-mobile-bold">
+        <li>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="#">Каталог</a>
+        <li>
+          <a class="navigation-link" href="#">Каталог</a>
         </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link navigation-menu-link--active" href="#">Исполнители</a>
+        <li>
+          <a class="navigation-link navigation-link--active" href="artist.html">Исполнители</a>
         </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="#">Контакты</a>
+        <li>
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
       </ul>
-
-      <input class="navigation-search" type="text" placeholder="Поиск...">
     </nav>
+
+    <input class="search ms-auto" type="text" placeholder="Поиск...">
   </div>
 </header>
 
 <section class="page-description page-description--artist" id="page-description">
-  <div class="container">
+  <div class="limit-content">
     <h1 class="text-start mb-1">Morten Harket</h1>
     <p class="fs-1 text-start color-white mb-5">24 875 поклонников</p>
-    <div class="artist-description-buttons">
+    <div class="artist-description-buttons d-flex column-gap-2 row-gap-mobile-2 flex-mobile-column">
       <button class="btn btn-purple btn-icon btn-icon--play">
         <span>Микс</span>
       </button>
@@ -51,7 +53,7 @@
 
 <main>
   <section class="section section--artist" id="page-popular-track">
-    <div class="container">
+    <div class="limit-content">
       <h2 class="text-center mb-5">Популярные треки</h2>
 
       <ul class="popular-tracks grid grid--items-2">
@@ -96,7 +98,7 @@
   </section>
 
   <section class="section section--artist" id="page-discography">
-    <div class="container">
+    <div class="limit-content">
       <h2 class="text-center mb-5">Дискография</h2>
 
       <div class="grid grid--items-4">
@@ -140,7 +142,7 @@
   </section>
 
   <section class="section section--artist section--same-vertical" id="page-similar">
-    <div class="container">
+    <div class="limit-content">
       <h2 class="text-center mb-5">Похожие исполнители</h2>
 
       <div class="grid grid--items-4">
@@ -197,30 +199,50 @@
 </main>
 
 <footer class="footer bg-gradient">
-  <div class="container footer-content">
-    <div class="footer-col">
+  <div class="footer-full-nav limit-content d-flex flex-mobile-column column-gap-4">
+    <div class="footer-col d-flex flex-column">
       <h2 class="footer-col-title">О нас</h2>
-      <a class="footer-link" href="#">История компании</a>
-      <a class="footer-link" href="#">Карьера</a>
-      <a class="footer-link" href="#">Особенности</a>
-      <a class="footer-link" href="#">Пресса</a>
+      <ul>
+        <li class="fs-1">
+          <a  href="#">История компании</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Карьера</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Особенности</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Пресса</a>
+        </li>
+      </ul>
     </div>
-    <div class="footer-col">
+    <div class="footer-col d-flex flex-column">
       <h2 class="footer-col-title">Поддержка</h2>
-      <a class="footer-link" href="#">База знаний</a>
-      <a class="footer-link" href="#">Тарифы</a>
-      <a class="footer-link" href="#">Мобильное приложение</a>
-      <a class="footer-link" href="#">Условия использования</a>
+      <ul>
+        <li class="fs-1">
+          <a href="#">База знаний</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Тарифы</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Мобильное приложение</a>
+        </li>
+        <li class="fs-1">
+          <a href="#">Условия использования</a>
+        </li>
+      </ul>
     </div>
-    <div class="footer-col">
+    <div class="footer-col d-flex flex-column">
       <h2 class="footer-col-title">Контакты</h2>
-      <a class="footer-link" href="mailto:hello@music.box">hello@music.box</a>
-      <p class="footer-link">Russia, Moscow. Music Box studio</p>
-      <a class="footer-link" href="tel:+74999999999">+ 7 499 999 99 99</a>
+      <a class="fs-1 align-self-flex-start" href="mailto:hello@music.box">hello@music.box</a>
+      <p class="fs-1">Russia, Moscow. Music Box studio</p>
+      <a class="fs-1 align-self-flex-start" href="tel:+74999999999">+ 7 499 999 99 99</a>
     </div>
-    <div class="footer-col">
+    <div class="footer-col d-flex flex-column">
       <h2 class="footer-col-title">Подписывайтесь</h2>
-      <div class="footer-socials">
+      <div class="d-flex align-items-center column-gap-2">
         <a href="#">
           <img src="./images/Google+.png" alt="google">
         </a>
@@ -236,25 +258,13 @@
       </div>
     </div>
   </div>
-  <hr class="divider">
-  <div class="container">
-    <ul class="footer-nav">
-      <li>
-        <a class="footer-link" href="#">Магазин</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#">Обслуживание</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#">Блог</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#">Поддержка</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#">Контакты</a>
-      </li>
-    </ul>
+  <hr class="divider" />
+  <div class="footer-nav limit-content d-flex column-gap-1 row-gap-mobile-1 flex-mobile-column">
+    <a class="fs-1" href="#">Магазин</a>
+    <a class="fs-1" href="#">Обслуживание</a>
+    <a class="fs-1" href="#">Блог</a>
+    <a class="fs-1" href="#">Поддержка</a>
+    <a class="fs-1" href="#">Контакты</a>
   </div>
 </footer>
 </body>

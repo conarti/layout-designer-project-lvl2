@@ -54,12 +54,12 @@ input {
 
 * {
   font-family: Roboto, sans-serif;
+  line-height: 1.5;
 }
 
 body {
   color: #cacaca;
   font-size: 18px;
-  line-height: 1.5;
   background-color: #08020d;
 }
 
@@ -899,6 +899,8 @@ a {
 }
 .btn-icon {
   padding: 20px 30px 20px 66px;
+  font-size: 12.8px;
+  text-align: start;
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 30px 20px;
@@ -952,20 +954,27 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 1239.97px) {
+  .page-description {
+    padding-top: 250px;
+    padding-bottom: 200px;
+  }
+}
 .page-description--main {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
 .page-description--artist {
+  padding-top: 250px;
+  padding-bottom: 225px;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
 @media screen and (max-width: 1239.97px) {
-  .page-description {
-    padding-top: 250px;
-    padding-bottom: 200px;
+  .page-description--artist {
+    padding-top: 225px;
   }
 }
 
@@ -1140,22 +1149,9 @@ a {
   margin-bottom: 16px;
 }
 
-.artist-description-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-}
 .artist-description-buttons > .btn {
   width: 200px;
-  text-align: start;
-}
-@media screen and (max-width: 1239.97px) {
-  .artist-description-buttons {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 24px;
-  }
+  height: 62px;
 }
 
 .popular-tracks-cover {

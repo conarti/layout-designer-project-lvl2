@@ -2,16 +2,23 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
+  @include media(mobile) {
+    padding-top: 250px;
+    padding-bottom: 200px;
+  }
+
   &--main {
     @include bg-image("../images/banner.png");
   }
 
   &--artist {
-    @include bg-image("../images/Morten Harket.png");
-  }
-
-  @include media(mobile) {
     padding-top: 250px;
-    padding-bottom: 200px;
+    padding-bottom: 225px;
+
+    @include bg-image("../images/Morten Harket.png");
+
+    @include media(mobile) {
+      padding-top: 225px;
+    }
   }
 }
