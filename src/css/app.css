@@ -750,6 +750,10 @@ a {
   column-gap: 100px !important;
 }
 
+.align-self-flex-start {
+  align-self: flex-start !important;
+}
+
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -1113,7 +1117,7 @@ a {
 
 .footer-full-nav {
   padding-top: 62px;
-  padding-bottom: 72px;
+  padding-bottom: 69px;
 }
 @media screen and (max-width: 1239.97px) {
   .footer-full-nav {
@@ -1123,7 +1127,8 @@ a {
 
 .footer-nav {
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
+  border-top: 1px solid #cacaca;
 }
 
 .footer-col {
@@ -1131,17 +1136,7 @@ a {
 }
 .footer-col-title {
   font-size: 18px;
-  line-height: 27px;
-  font-weight: bold;
   margin-bottom: 16px;
-}
-.footer-col-title--social {
-  margin-bottom: 14px;
-}
-
-.divider {
-  margin: 0;
-  border-color: #cacaca;
 }
 
 .artist-description-buttons {

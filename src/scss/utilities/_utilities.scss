@@ -71,5 +71,9 @@ $utilities: (
   "column-gap": (
     property: column-gap,
     values: $spacers
+  ),
+  "align-self": (
+    property: align-self,
+    values: flex-start
   )
 );
