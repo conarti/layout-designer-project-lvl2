@@ -8,16 +8,13 @@
 
 @mixin flex($gap: null, $direction: null, $items: null, $content: null, $wrap: wrap) {
   display: flex;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
+  flex-flow: $direction $wrap;
   align-items: $items;
   justify-content: $content;
 
-  @if $direction == null or $direction == row {
+  @if not $direction or $direction == row {
     column-gap: $gap;
-  }
-
-  @else {
+  } @else {
     row-gap: $gap;
   }
 }
@@ -34,12 +31,12 @@
   color: $color;
 
   &:hover {
-    background-color: rgb($color, $bg-opacity-hover);
+    background-color: rgb($color / $bg-opacity-hover);
   }
 }
 
 @mixin button-variant($color, $text, $color-hover) {
-  @if $color-hover == null {
+  @if not $color-hover {
     $color-hover: darken($color, 5);
   }
 
