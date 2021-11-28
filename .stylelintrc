@@ -11,6 +11,7 @@
     "declaration-empty-line-before": null,
     "scss/no-global-function-names": null,
     "scss/dollar-variable-empty-line-before": null,
+    "color-function-notation": "legacy",
     "no-empty-source": null,
     "order/properties-order": [],
     "at-rule-empty-line-before": ["always",

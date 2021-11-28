@@ -31,7 +31,7 @@
   color: $color;
 
   &:hover {
-    background-color: rgb($color / $bg-opacity-hover);
+    background-color: rgb($color, $bg-opacity-hover);
   }
 }
 
