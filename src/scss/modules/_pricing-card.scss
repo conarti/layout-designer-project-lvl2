@@ -1,23 +1,23 @@
 .pricing-card {
-  padding: map-get($spacers, 2) map-get($spacers, 2);
-  border-radius: map-get($spacers, 1);
   box-sizing: border-box;
   max-width: 366px;
+  padding: map-get($spacers, 2) map-get($spacers, 2);
+  border-radius: map-get($spacers, 1);
 
   color: $main-text-color;
   text-align: center;
 
   @include media(mobile) {
-    padding: map-get($spacers, 1) map-get($spacers, 2) map-get($spacers, 2);
     max-width: none;
+    padding: map-get($spacers, 1) map-get($spacers, 2) map-get($spacers, 2);
   }
 
   &-title {
     margin-bottom: 200px;
 
+    font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    font-weight: 400;
 
     @include media(mobile) {
       font-size: 16px;
@@ -46,14 +46,14 @@
   }
 
   &--free {
-    @include bg-image("../images/subscribe_1.png")
+    @include bg-image("../images/subscribe_1.png");
   }
 
   &--standard {
-    @include bg-image("../images/subscribe_2.png")
+    @include bg-image("../images/subscribe_2.png");
   }
 
   &--premium {
-    @include bg-image("../images/subscribe_3.png")
+    @include bg-image("../images/subscribe_3.png");
   }
 }

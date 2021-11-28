@@ -1,8 +1,8 @@
 .search {
-  padding: 5px 10px;
-  border-radius: 50px;
   min-width: 248px;
   height: 25px;
+  padding: 5px 10px;
+  border-radius: 50px;
 
   color: $search-placeholder-color;
   font-size: 13.3px;
@@ -23,8 +23,8 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px $search-border-focus-color;
-
     color: $secondary-text-color;
+
+    box-shadow: 0 0 0 2px $search-border-focus-color;
   }
 }

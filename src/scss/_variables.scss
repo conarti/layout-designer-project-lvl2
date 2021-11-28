@@ -1,5 +1,5 @@
 $black: #08020d;
-$white: #ffffff;
+$white: #fff;
 $gray: #e0e0e0;
 $dark-gray: #cacaca;
 $dark: #3c3b3d;
@@ -10,7 +10,7 @@ $red: #95390c;
 
 /** THEME VARS **/
 
-$font-family-base: Roboto, sans-serif;
+$font-family-base: roboto, sans-serif;
 
 $primary: $green;
 
@@ -53,8 +53,8 @@ $buttons-outline: (
   dark-gray: $dark-gray
 );
 
-$input-background-hover: rgba($main-text-color, $bg-opacity-hover);
-$input-background-focus: rgba($main-text-color, $bg-opacity-focus);
+$input-background-hover: rgb($main-text-color $bg-opacity-hover);
+$input-background-focus: rgb($main-text-color $bg-opacity-focus);
 $input-border-hover: 2px solid $secondary-text-color;
 $input-border-focus: 2px solid $primary;
 $input-color: $main-text-color;
@@ -73,6 +73,7 @@ $btn-transition: color 0.25s, background-color 0.25s;
 $form-transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
 
 /** SIZES **/
+
 /** These values are used to generate utilities. Also you need to use it for our own css components **/
 
 $spacers: (

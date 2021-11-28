@@ -1,7 +1,9 @@
 .news-item {
   display: grid;
-  column-gap: 50px;
+
   grid-template-rows: min-content auto;
+
+  column-gap: 50px;
 
   &--img-left {
     grid-template-areas: "image body" "image footer";
@@ -15,11 +17,12 @@
 
   @include media(mobile) {
     grid-template-areas: "image image" "body body" "footer footer";
+
     column-gap: 0;
 
     &-image {
-      margin-bottom: 50px;
       max-width: 100%;
+      margin-bottom: 50px;
     }
   }
 
@@ -28,8 +31,8 @@
   }
 
   &-body {
-    margin-bottom: map-get($spacers, 1);
     grid-area: body;
+    margin-bottom: map-get($spacers, 1);
 
     @include media(mobile) {
       margin-bottom: map-get($spacers, 2);
@@ -43,10 +46,10 @@
   &-title {
     margin-bottom: 30px;
 
-    font-size: 30px;
     font-weight: normal;
-    text-transform: capitalize;
+    font-size: 30px;
     line-height: 1.5;
+    text-transform: capitalize;
 
     @include media(mobile) {
       margin-bottom: map-get($spacers, 1);

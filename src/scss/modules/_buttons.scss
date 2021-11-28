@@ -7,8 +7,8 @@
   font-size: map-get($font-sizes, small);
   text-transform: uppercase;
 
-  cursor: pointer;
   background-color: transparent;
+  cursor: pointer;
 
   transition: $btn-transition;
 
@@ -34,12 +34,13 @@
     font-size: map-get($font-sizes, small-more);
     text-align: start;
 
-    background-size: 20px;
     background-repeat: no-repeat;
     background-position: 30px 20px;
+    background-size: 20px;
 
     & > span {
       margin-left: 36px;
+
       vertical-align: middle;
     }
 
@@ -60,7 +61,7 @@
 
   @each $name, $options in $buttons {
     &-#{"" + $name} {
-      @include button-variant(map-get($options, color), map-get($options, text-color), map-get($options, hover-color))
+      @include button-variant(map-get($options, color), map-get($options, text-color), map-get($options, hover-color));
     }
   }
 }

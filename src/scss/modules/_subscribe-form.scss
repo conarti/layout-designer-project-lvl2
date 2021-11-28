@@ -12,10 +12,10 @@
 
   &-field {
     min-width: 270px;
-    border: 2px solid $dark-gray;
-    border-radius: 3px;
     min-height: 50px;
     padding: 0 20px;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
 
     color: $input-color;
     font-weight: 700;
@@ -38,7 +38,7 @@
     }
 
     &::placeholder {
-      opacity: 1;
+      opacity: 100%;
     }
   }
 
