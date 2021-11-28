@@ -797,6 +797,11 @@ a {
   }
 }
 
+.popular-tracks-cover {
+  width: 55px;
+  height: 55px;
+}
+
 .header {
   position: absolute;
   top: 25px;
@@ -1175,36 +1180,10 @@ a {
   height: 62px;
 }
 
-.popular-tracks-cover {
-  width: 55px;
-  height: 55px;
-}
-.popular-tracks-info {
-  display: grid;
-  grid-template-areas: "cover song time" "cover author time";
-  grid-template-columns: min-content auto min-content;
-  align-items: center;
-  width: 100%;
-  column-gap: 15px;
-  font-size: 12.8px;
-}
-.popular-tracks-cover {
-  grid-area: cover;
-}
-.popular-tracks-song {
-  grid-area: song;
-}
-.popular-tracks-author {
-  grid-area: author;
-}
-.popular-tracks-time {
-  grid-area: time;
-}
-
 .discography-item-cover {
+  display: block;
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
 }
 @media screen and (max-width: 1239.97px) {
   .discography-item-cover {
@@ -1214,13 +1193,8 @@ a {
 }
 .discography-item-album-name {
   font-size: 18px;
-  line-height: 27px;
-  text-transform: capitalize;
 }
 
-.similar {
-  text-align: center;
-}
 .similar-cover {
   width: 250px;
   height: 250px;

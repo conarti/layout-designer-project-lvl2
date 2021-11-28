@@ -1,8 +1,8 @@
 .discography-item {
   &-cover {
+    display: block;
     width: 250px;
     height: 250px;
-    margin-bottom: 18px;
 
     @include media(mobile) {
       width: 137px;
@@ -12,7 +12,5 @@
 
   &-album-name {
     font-size: 18px;
-    line-height: 27px;
-    text-transform: capitalize;
   }
 }
