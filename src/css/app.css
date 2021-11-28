@@ -512,6 +512,22 @@ a {
   margin-top: 16px !important;
 }
 
+.mt-5 {
+  margin-top: 48px !important;
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-1 {
+    margin-top: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-5 {
+    margin-top: 48px !important;
+  }
+}
+
 .pt-10 {
   padding-top: 100px !important;
 }
@@ -992,7 +1008,6 @@ a {
 }
 @media screen and (max-width: 1239.97px) {
   .page-description {
-    padding-top: 250px;
     padding-bottom: 200px;
   }
 }
