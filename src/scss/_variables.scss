@@ -53,8 +53,8 @@ $buttons-outline: (
   dark-gray: $dark-gray
 );
 
-$input-background-hover: rgb($main-text-color $bg-opacity-hover);
-$input-background-focus: rgb($main-text-color $bg-opacity-focus);
+$input-background-hover: rgb($main-text-color, $bg-opacity-hover);
+$input-background-focus: rgb($main-text-color, $bg-opacity-focus);
 $input-border-hover: 2px solid $secondary-text-color;
 $input-border-focus: 2px solid $primary;
 $input-color: $main-text-color;
