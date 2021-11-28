@@ -1,8 +1,9 @@
 .footer-full-nav {
   padding-top: 62px;
-  padding-bottom: 69px;
+  padding-bottom: 72px;
 
   @include media(mobile) {
+    padding-bottom: 68px;
     row-gap: 30px;
   }
 }

@@ -1117,10 +1117,11 @@ a {
 
 .footer-full-nav {
   padding-top: 62px;
-  padding-bottom: 69px;
+  padding-bottom: 72px;
 }
 @media screen and (max-width: 1239.97px) {
   .footer-full-nav {
+    padding-bottom: 68px;
     row-gap: 30px;
   }
 }
@@ -1128,7 +1129,6 @@ a {
 .footer-nav {
   padding-top: 40px;
   padding-bottom: 48px;
-  border-top: 1px solid #cacaca;
 }
 
 .footer-col {
@@ -1136,6 +1136,7 @@ a {
 }
 .footer-col-title {
   font-size: 18px;
+  line-height: 1.5;
   margin-bottom: 16px;
 }
 
@@ -1219,6 +1220,11 @@ a {
   font-size: 18px;
   line-height: 27px;
   text-transform: capitalize;
+}
+
+.divider {
+  margin: 0;
+  border-color: #cacaca;
 }
 
 /*# sourceMappingURL=app.css.map */
