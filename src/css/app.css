@@ -802,6 +802,10 @@ a {
   height: 55px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .header {
   position: absolute;
   top: 25px;
