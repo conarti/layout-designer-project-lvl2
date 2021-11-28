@@ -1135,6 +1135,9 @@ a {
   font-weight: bold;
   margin-bottom: 16px;
 }
+.footer-col-title--social {
+  margin-bottom: 14px;
+}
 
 .divider {
   margin: 0;
