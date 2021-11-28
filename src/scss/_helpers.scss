@@ -49,3 +49,7 @@
 .nowrap {
   white-space: nowrap;
 }
+
+.lh-1 {
+  line-height: map-get($font-sizes, 1);
+}

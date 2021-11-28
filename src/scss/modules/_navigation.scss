@@ -10,6 +10,7 @@
 
   &-link {
     color: $link-color;
+    line-height: map-get($font-sizes, 1);
 
     transition: color 0.25s;
 

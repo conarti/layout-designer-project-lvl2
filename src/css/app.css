@@ -806,6 +806,10 @@ a {
   white-space: nowrap;
 }
 
+.lh-1 {
+  line-height: 16px;
+}
+
 .header {
   position: absolute;
   top: 25px;
@@ -824,6 +828,7 @@ a {
 }
 .navigation-link {
   color: #cacaca;
+  line-height: 16px;
   transition: color 0.25s;
 }
 .navigation-link:hover {
