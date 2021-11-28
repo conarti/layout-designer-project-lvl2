@@ -508,12 +508,54 @@ a {
   }
 }
 
+.mt-0 {
+  margin-top: 0 !important;
+}
+
 .mt-1 {
   margin-top: 16px !important;
 }
 
+.mt-2 {
+  margin-top: 24px !important;
+}
+
+.mt-3 {
+  margin-top: 32px !important;
+}
+
+.mt-4 {
+  margin-top: 40px !important;
+}
+
 .mt-5 {
   margin-top: 48px !important;
+}
+
+.mt-6 {
+  margin-top: 56px !important;
+}
+
+.mt-7 {
+  margin-top: 64px !important;
+}
+
+.mt-8 {
+  margin-top: 78px !important;
+}
+
+.mt-9 {
+  margin-top: 90px !important;
+}
+
+.mt-10 {
+  margin-top: 100px !important;
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-0 {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 1239.97px) {
@@ -523,8 +565,56 @@ a {
 }
 
 @media screen and (max-width: 1239.97px) {
+  .mt-mobile-2 {
+    margin-top: 24px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-3 {
+    margin-top: 32px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-4 {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
   .mt-mobile-5 {
     margin-top: 48px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-6 {
+    margin-top: 56px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-7 {
+    margin-top: 64px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-8 {
+    margin-top: 78px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-9 {
+    margin-top: 90px !important;
+  }
+}
+
+@media screen and (max-width: 1239.97px) {
+  .mt-mobile-10 {
+    margin-top: 100px !important;
   }
 }
 
@@ -950,7 +1040,7 @@ a {
   display: block;
 }
 .btn-icon {
-  padding: 20px 30px 20px 66px;
+  padding: 20px 30px;
   font-size: 12.8px;
   text-align: start;
   background-size: 20px;
@@ -958,6 +1048,7 @@ a {
   background-position: 30px 20px;
 }
 .btn-icon > span {
+  margin-left: 36px;
   vertical-align: middle;
 }
 .btn-icon--play {
@@ -1017,16 +1108,9 @@ a {
   background-size: cover;
 }
 .page-description--artist {
-  padding-top: 250px;
-  padding-bottom: 225px;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-}
-@media screen and (max-width: 1239.97px) {
-  .page-description--artist {
-    padding-top: 225px;
-  }
 }
 
 .pricing-list {

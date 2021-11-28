@@ -29,7 +29,7 @@
   }
 
   &-icon {
-    padding: 20px 30px 20px (30px + 20px + 16px);
+    padding: 20px 30px;
 
     font-size: map-get($font-sizes, small-more);
     text-align: start;
@@ -39,6 +39,7 @@
     background-position: 30px 20px;
 
     & > span {
+      margin-left: 36px;
       vertical-align: middle;
     }
 

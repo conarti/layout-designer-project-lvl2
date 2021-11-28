@@ -11,13 +11,6 @@
   }
 
   &--artist {
-    padding-top: 250px;
-    padding-bottom: 225px;
-
     @include bg-image("../images/Morten Harket.png");
-
-    @include media(mobile) {
-      padding-top: 225px;
-    }
   }
 }
